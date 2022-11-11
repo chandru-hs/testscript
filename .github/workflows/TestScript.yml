@@ -13,5 +13,5 @@ jobs:
          with:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '17'
-         name: Running Testsuites from the different repo
+         name: Running Testsuites
       -  run: java Testsuites/natural-numbers.java
