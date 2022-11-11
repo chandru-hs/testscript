@@ -2,6 +2,8 @@ name: Test script workflow
 
 on: 
   workflow_dispatch:
+  
+  workflow_call:
 
 jobs:
   Testsamplerun:
