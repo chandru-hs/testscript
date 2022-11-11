@@ -1,0 +1,17 @@
+name: Test script workflow
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  Testsamplerun:
+    runs-on: windows-latest
+    steps:
+      -  uses: actions/checkout@v3
+         name: Java JDK setup
+      -  uses: actions/setup-java@v3
+         with:
+          distribution: 'temurin' # See 'Supported distributions' for available options
+          java-version: '17'
+         name: Running Testsuites from the different repo
+      -  run: java Testsuites/natural-numbers.java
